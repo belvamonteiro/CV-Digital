@@ -1,10 +1,12 @@
 import React from "react";
 import "./Footer.css"; //import css style
 import logo from "../../images/logo-white.png";
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   return (
     <footer>
+      <ScrollToTop smooth top="1000" style={{ backgroundColor: "#f7d919" }} />
       <ul className="footer-list">
         <li className="footer-item">
           <img src={logo} alt="" />

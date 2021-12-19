@@ -2,6 +2,7 @@ import React from "react";
 import "./PopularCourse.css";
 import { Card } from "react-bootstrap";
 import Rating from "react-rating";
+import { useHistory } from "react-router-dom";
 
 const PopularCourse = (props) => {
   const { course } = props;
@@ -15,8 +16,14 @@ const PopularCourse = (props) => {
     enrolled,
     price,
   } = course;
+
+  const history = useHistory();
+
+  const handleEnroll = () => {
+    history.push("/courseDetails");
+  };
   return (
-    <Card className="popular-course">
+    <Card className="popular-course" data-aos="fade-right">
       <Card.Img variant="top" src={img} />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center">
@@ -41,8 +48,14 @@ const PopularCourse = (props) => {
         <div className="d-flex justify-content-between align-items-center">
           {price ? (
             <>
-              <p className="popular-course-price mt-auto">$ {price}</p>
-              <p className="popular-course-price-enroll mt-auto">EnRoll</p>
+              <p className="popular-course-price mt-auto cbc">$ {price}</p>
+              <p
+                className="popular-course-price-enroll mt-auto"
+                data-aos="zoom-in"
+                onClick={handleEnroll}
+              >
+                EnRoll
+              </p>
             </>
           ) : (
             <p className="popular-course-price-free mt-auto">Free</p>

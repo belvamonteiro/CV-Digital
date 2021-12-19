@@ -17,7 +17,7 @@ const Course = (props) => {
     price,
   } = course;
   return (
-    <Card className="course">
+    <Card className="course" data-aos="fade-right">
       <Card.Img variant="top" src={img} />
       <Card.Body className="d-flex flex-column justify-content-between">
         <div className="d-flex justify-content-between align-items-center">
@@ -32,7 +32,7 @@ const Course = (props) => {
             {duration}hr
           </p>
           {price ? (
-            <p className="course-price mt-auto">$ {price}</p>
+            <p className="course-price mt-auto cbc">$ {price}</p>
           ) : (
             <p className="course-price-free mt-auto">Free</p>
           )}
@@ -47,7 +47,9 @@ const Course = (props) => {
             ></Rating>
           </p>
 
-          <p className="course-price-enroll mt-auto">Enroll</p>
+          <p className="course-price-enroll mt-auto" data-aos="zoom-in">
+            Enroll
+          </p>
         </div>
       </Card.Body>
     </Card>

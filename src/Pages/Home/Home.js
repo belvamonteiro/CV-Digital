@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, FormControl } from "react-bootstrap";
+import { Container, Spinner, Row, Col, FormControl } from "react-bootstrap";
 import Banner from "../../Components/Banner/Banner";
 import PopularCourse from "../../Components/PopularCourse/PopularCourse";
 import "./Home.css";
@@ -21,11 +21,20 @@ const Home = () => {
           <h2 className="mb-4">Popular Courses</h2>
           <hr className="line" />
           <Row xs={1} md={3} className="g-4">
-            {courses.map((course) => (
-              <Col>
-                <PopularCourse key={course.id} course={course}></PopularCourse>
-              </Col>
-            ))}
+            {courses.length === 0 ? (
+              <Spinner animation="grow" style={{ margin: "50px auto" }} />
+            ) : (
+              <>
+                {courses.map((course) => (
+                  <Col>
+                    <PopularCourse
+                      key={course.id}
+                      course={course}
+                    ></PopularCourse>
+                  </Col>
+                ))}
+              </>
+            )}
           </Row>
           <button className="btn btn-success d-block mx-auto mt-4">
             View All Courses
