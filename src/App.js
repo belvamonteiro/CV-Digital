@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
 import Courses from "./Pages/Courses/Courses";
 import Home from "./Pages/Home/Home";
 
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
         <Footer />
