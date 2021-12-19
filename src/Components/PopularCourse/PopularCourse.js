@@ -42,7 +42,7 @@ const PopularCourse = (props) => {
           {price ? (
             <>
               <p className="popular-course-price mt-auto">$ {price}</p>
-              <p className="popular-course-price-free mt-auto">EnRoll</p>
+              <p className="popular-course-price-enroll mt-auto">EnRoll</p>
             </>
           ) : (
             <p className="popular-course-price-free mt-auto">Free</p>

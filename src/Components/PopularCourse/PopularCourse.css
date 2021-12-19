@@ -18,7 +18,8 @@
   color: #0071dc;
 }
 .popular-course-price,
-.popular-course-price-free {
+.popular-course-price-free,
+.popular-course-price-enroll {
   font-size: 18px;
   font-weight: 600;
   width: max-content;
@@ -32,6 +33,11 @@
 .popular-course-price-free {
   background-color: #6cbd7e;
   color: #fff;
+}
+.popular-course-price-enroll {
+  background-color: #136d26;
+  color: #fff;
+  cursor: pointer;
 }
 .star-icon {
   color: #f7c04d;
