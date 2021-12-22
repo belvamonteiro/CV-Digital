@@ -10,6 +10,7 @@ import Home from "./Pages/Home/Home";
 import { css } from "@emotion/react";
 import { ClockLoader } from "react-spinners";
 import SingleCourseDetails from "./Pages/SingleCourseDetails/SingleCourseDetails";
+import CheckOut from "./Components/CheckOut/CheckOut";
 
 const override = css``;
 
@@ -53,8 +54,11 @@ function App() {
               <Route path="/contact">
                 <Contact />
               </Route>
-              <Route path="/courseDetails:courseId">
+              <Route path="/courseDetails/:courseId">
                 <SingleCourseDetails />
+              </Route>
+              <Route path="/checkout">
+                <CheckOut />
               </Route>
             </Switch>
             <Footer />

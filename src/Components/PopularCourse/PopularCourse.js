@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 const PopularCourse = (props) => {
   const { course } = props;
   const {
+    id,
     instructor,
     img,
     category,
@@ -20,7 +21,7 @@ const PopularCourse = (props) => {
   const history = useHistory();
 
   const handleEnroll = () => {
-    history.push("/courseDetails");
+    history.push(`/courseDetails/${id}`);
   };
   return (
     <Card className="popular-course" data-aos="fade-right">

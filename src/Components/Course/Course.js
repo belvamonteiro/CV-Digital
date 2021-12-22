@@ -2,10 +2,13 @@ import React from "react";
 import "./Course.css"; //import css style
 import { Card } from "react-bootstrap"; //import BOOTSTRAP
 import Rating from "react-rating"; //import RATING
+import { useHistory } from "react-router-dom";
 
 const Course = (props) => {
+  const history = useHistory();
   const { course } = props;
   const {
+    id,
     instructor,
     img,
     category,
@@ -16,6 +19,11 @@ const Course = (props) => {
     duration,
     price,
   } = course;
+
+  const handleEnroll = () => {
+    history.push(`/courseDetails/${id}`);
+  };
+
   return (
     <Card className="course" data-aos="fade-right">
       <Card.Img variant="top" src={img} />
@@ -47,7 +55,11 @@ const Course = (props) => {
             ></Rating>
           </p>
 
-          <p className="course-price-enroll mt-auto" data-aos="zoom-in">
+          <p
+            onClick={handleEnroll}
+            className="course-price-enroll mt-auto"
+            data-aos="zoom-in"
+          >
             Enroll
           </p>
         </div>
