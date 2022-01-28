@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Col, Row, Spinner, Container } from "react-bootstrap"; //importing BOOTSTRAP
 import Course from "../../Components/Course/Course";
 
-const Courses = () => {
+const Projetos = () => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Courses = () => {
   return (
     <Container>
       <main className="all-courses">
-        <h1 className="text-center mb-3 pb-2">All Courses</h1>
+        <h1 className="text-center mb-3 pb-2">PROJETOS</h1>
         <hr className="line" />
         <Row xs={1} md={4} className="g-4">
           {courses.length === 0 ? (
@@ -35,4 +35,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Projetos;

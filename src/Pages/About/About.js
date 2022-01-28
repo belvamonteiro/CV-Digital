@@ -17,13 +17,13 @@ const About = () => {
       <section className="about">
         <div className="about-header">
           <h1>
-            <span className="heading-about-primary">Improving Lives</span>{" "}
+            <span className="heading-about-primary">O instituto para a promoção e desenvolvimento da inovação.</span>{" "}
             <br />
-            <span className="heading-about-secondary">Through Learning..</span>
+            <span className="heading-about-secondary">Que já conta com muitos sócios.</span>
           </h1>
         </div>
         <div className="about-team container py-5">
-          <h2 className="text-center mb-3 pb-2">Meet Our Teachers</h2>
+          <h2 className="text-center mb-3 pb-2">ASSOCIADOS</h2>
           <hr className="line" />
           <Row xs={1} md={4} className="g-3">
             {members.map((member) => (

@@ -6,37 +6,37 @@ import ScrollToTop from "react-scroll-to-top";
 const Footer = () => {
   return (
     <footer>
-      <ScrollToTop smooth top="1000" style={{ backgroundColor: "#f7d919" }} />
+      <ScrollToTop smooth top="1000" style={{ backgroundColor: "#35a7df" }} />
       <ul className="footer-list">
         <li className="footer-item">
           <img src={logo} alt="" />
           <p>
-            UCera is perhaps the biggest name in online courses and education.
-            It has a global roster of universities and partners to offer more
-            than 3,900 specialized courses.
+            O instituto para a promoção e desenvolvimento da inovação - CV Digital
+            é uma pessoa coletiva de direito privado, sem fins lucrativos, dotada de outonomia
+            organizativa, financeira e patrimonial.
           </p>
         </li>
         <li className="footer-item">
-          <h4>Address</h4>
-          <p>West Rampura,Wapda Road,Dhaka-1219,Bangladesh.</p>
+          <h4>Localização</h4>
+          <p>Plateau - Avenida 5 de Julho</p>
         </li>
         <li className="footer-item">
-          <h4>Contact</h4>
+          <h4>Contactos</h4>
           <p>
-            Mobile: (+88) - 1990 - 6886 <br /> Hotline: 1800 - 1102 <br /> Mail:
-            contact@ucera.com
+            Telefone: 262 40 70  <br /> Telemóvel: (+238) 958 05 08 <br /> E-Mail:
+            cvdigital@gmail.com
           </p>
         </li>
         <li className="footer-item">
-          <h4>Hour of operation</h4>
+          <h4>Funcionamento</h4>
           <p>
-            Monday - Friday: 09:00 - 20:00 <br /> Sunday & Saturday: 10:30 -
-            22:00
+            Segunda - Sexta: 09:00 - 20:00 <br /> Sábados & Domingos: 10:30 -
+            13:00
           </p>
         </li>
       </ul>
       <p className="copyright-text">
-        <small>Copyright &copy; All Rights Reserved BySohel Rana Tipu.</small>
+        <small>Copyright &copy; All Rights Reserved By Belva Monteiro & Ermickson Alves.</small>
       </p>
     </footer>
   );

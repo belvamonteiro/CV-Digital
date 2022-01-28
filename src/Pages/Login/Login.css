@@ -1,0 +1,12 @@
+
+@media (max-width: 668px) {
+  .contact-heading-box {
+    padding: 80px 0 40px;
+  }
+  .contact-heading-box p {
+    width: 80%;
+  }
+  .sm-mb {
+    margin-bottom: 10px;
+  }
+}

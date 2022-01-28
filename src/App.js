@@ -4,15 +4,15 @@ import { useState, useEffect } from "react";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import About from "./Pages/About/About";
-import Contact from "./Pages/Contact/Contact";
-import Courses from "./Pages/Courses/Courses";
+import Login from "./Pages/Login/Login";
+import Projetos from "./Pages/Projetos/Projetos";
 import Home from "./Pages/Home/Home";
 import { css } from "@emotion/react";
 import { ClockLoader } from "react-spinners";
 import SingleCourseDetails from "./Pages/SingleCourseDetails/SingleCourseDetails";
 import CheckOut from "./Components/CheckOut/CheckOut";
 
-const override = css``;
+const override = css;
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,7 +30,7 @@ function App() {
           <ClockLoader
             loading={loading}
             size={50}
-            color="#f7d919"
+            color="#35a7df"
             css={override}
           />
         </div>
@@ -42,17 +42,17 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/home">
-                <Home />
-              </Route>
-              <Route path="/courses">
-                <Courses />
+              <Route path="/projetos">
+                <Projetos />
               </Route>
               <Route path="/about">
                 <About />
               </Route>
-              <Route path="/contact">
-                <Contact />
+              <Route path="/home">
+                <Home/>
+              </Route>
+              <Route path="/login">
+                <Login />
               </Route>
               <Route path="/courseDetails/:courseId">
                 <SingleCourseDetails />

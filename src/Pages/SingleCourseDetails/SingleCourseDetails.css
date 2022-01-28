@@ -1,6 +1,6 @@
 .singleCourse {
   min-height: 80vh;
-  background-color: #f8d700;
+  background-color: #2a1cec;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 .inside_container {
   height: 60vh;
   width: 80%;
-  background-color: #f5da2a;
+  background-color: #2a1cec;
   border-radius: 10px;
 }
 .leftSide {

@@ -13,8 +13,8 @@
   opacity: 1;
 }
 .alert-home {
-  background-color: #f7d919;
-  color: #1d2a45;
+  background-color: #2a1cec;
+  color: white;
   height: 200px;
   display: flex;
   flex-direction: column;

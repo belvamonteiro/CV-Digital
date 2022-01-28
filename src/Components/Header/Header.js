@@ -7,7 +7,7 @@ import logo from "../../images/logo.png";
 const Header = () => {
   const activeStyle = {
     fontWeight: "500",
-    color: "#ffc107",
+    color: "#35a7df",
   };
   return (
     <Navbar
@@ -26,23 +26,23 @@ const Header = () => {
           <Nav className="ms-auto">
             <Form className="d-flex">
               <FormControl
-                type="search"
-                placeholder="Search"
+                type="pesquisar"
+                placeholder="pesquisar"
                 className="me-2"
-                aria-label="Search"
+                aria-label="pesquisar"
               />
             </Form>
-            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/home">
-              Home
-            </Nav.Link>
-            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/Courses">
-              Courses
+            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/Projetos">
+              Projetos
             </Nav.Link>
             <Nav.Link activeStyle={activeStyle} as={NavLink} to="/About">
-              About
+              Sobre
             </Nav.Link>
-            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/Contact">
-              Contact Us
+            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/Contactos">
+              Contactos
+            </Nav.Link>
+            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/Login">
+              Login
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

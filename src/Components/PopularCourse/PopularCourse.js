@@ -12,10 +12,8 @@ const PopularCourse = (props) => {
     img,
     category,
     courseTitle,
-    level,
     rating,
     enrolled,
-    price,
   } = course;
 
   const history = useHistory();
@@ -29,10 +27,9 @@ const PopularCourse = (props) => {
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center">
           <p className="popular-course-category">{category}</p>
-          <p className="popular-course-level">{level}</p>
         </div>
         <h5 className="popular-course-title">{courseTitle}</h5>
-        <p className="popular-course-instructor">Instructor : {instructor}</p>
+        <p className="popular-course-instructor">Associado(a) : {instructor}</p>
         <div className="popular-course-review d-flex justify-content-between align-items-center">
           <p>
             <Rating
@@ -45,22 +42,6 @@ const PopularCourse = (props) => {
           <p className="users-icon">
             <i className="fas fa-users"></i> {enrolled}
           </p>
-        </div>
-        <div className="d-flex justify-content-between align-items-center">
-          {price ? (
-            <>
-              <p className="popular-course-price mt-auto cbc">$ {price}</p>
-              <p
-                className="popular-course-price-enroll mt-auto"
-                data-aos="zoom-in"
-                onClick={handleEnroll}
-              >
-                EnRoll
-              </p>
-            </>
-          ) : (
-            <p className="popular-course-price-free mt-auto">Free</p>
-          )}
         </div>
       </Card.Body>
     </Card>

@@ -6,14 +6,7 @@
   object-fit: cover;
   object-position: center;
 }
-.popular-course-level {
-  background-color: #e7e8ff;
-  color: #8086fe;
-  width: max-content;
-  padding: 3px 8px;
-  border-radius: 2px;
-  font-size: 12px;
-}
+
 .popular-course-category {
   color: #0071dc;
 }
@@ -26,14 +19,7 @@
   padding: 6px 18px;
   border-radius: 3px;
 }
-.popular-course-price {
-  background-color: #f7c04d;
-  color: #000;
-}
-.popular-course-price-free {
-  background-color: #6cbd7e;
-  color: #fff;
-}
+
 .popular-course-price-enroll {
   background-color: #136d26;
   color: #fff;

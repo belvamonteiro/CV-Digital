@@ -13,11 +13,7 @@ const Course = (props) => {
     img,
     category,
     courseTitle,
-    level,
     rating,
-    enrolled,
-    duration,
-    price,
   } = course;
 
   const handleEnroll = () => {
@@ -30,21 +26,10 @@ const Course = (props) => {
       <Card.Body className="d-flex flex-column justify-content-between">
         <div className="d-flex justify-content-between align-items-center">
           <p className="course-category">{category}</p>
-          <p className="course-level">{level}</p>
+
         </div>
         <h5 className="course-title">{courseTitle}</h5>
         <p className="course-instructor">Instructor : {instructor}</p>
-        <div className="d-flex align-items-center justify-content-between">
-          <p className="course-duration">
-            <i className="far fa-clock me-2"></i>
-            {duration}hr
-          </p>
-          {price ? (
-            <p className="course-price mt-auto cbc">$ {price}</p>
-          ) : (
-            <p className="course-price-free mt-auto">Free</p>
-          )}
-        </div>
         <div className="course-review d-flex justify-content-between align-items-center">
           <p className="rating">
             <Rating
@@ -53,14 +38,6 @@ const Course = (props) => {
               emptySymbol="far fa-star star-icon"
               fullSymbol="fas fa-star star-icon"
             ></Rating>
-          </p>
-
-          <p
-            onClick={handleEnroll}
-            className="course-price-enroll mt-auto"
-            data-aos="zoom-in"
-          >
-            Enroll
           </p>
         </div>
       </Card.Body>

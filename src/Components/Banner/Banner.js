@@ -8,10 +8,10 @@ const Banner = () => {
         <div className="header-info">
           {/* <p data-aos="fade">Learn from the best</p> */}
           <h1>
-            Change your Life,
-            <br /> Join Millions of Learner.
+              Junte-se a nós,
           </h1>
-          <button className="btn btn-warning mt-3">Discover Our Courses</button>
+          <h2>E beneficie de todas as oportunidades tecnologicas.</h2>
+          <button className="btn btn-warning mt-3">Cadastrar</button>
         </div>
       </div>
     </main>

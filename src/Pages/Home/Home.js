@@ -18,7 +18,7 @@ const Home = () => {
       <Banner></Banner>
       <Container>
         <div className="courses-home container mt-0 py-5">
-          <h2 className="mb-4">Popular Courses</h2>
+          <h2 className="mb-4">PROJETOS MAIS VISTOS</h2>
           <hr className="line" />
           <Row xs={1} md={3} className="g-4">
             {courses.length === 0 ? (
@@ -36,13 +36,13 @@ const Home = () => {
               </>
             )}
           </Row>
-          <button className="btn btn-success d-block mx-auto mt-4">
-            View All Courses
+          <button className="btn btn-primary d-block mx-auto mt-3">
+            Ver todos
           </button>
         </div>
       </Container>
       <div className="alert-home m-0">
-        <h2>Are you ready to take the next step toward your future?</h2>
+        <h2>Estás pronto para seguir o próximo passo para o future?</h2>
         <FormControl
           className="mt-3 full-width"
           placeholder="Give us your feedback"
